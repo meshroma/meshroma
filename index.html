@@ -5,60 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mesh Roma IT - Mappa Live</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #1a1a1a; font-family: Arial, sans-serif; }
-        
-        /* Barra superiore fissa per il contatore */
-        #top-bar {
-            width: 100%;
-            height: 40px;
-            background-color: #111111;
-            border-bottom: 1px solid #333;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            box-sizing: border-box;
-            color: #ffffff;
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 0.5px;
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: #1a1a1a; 
         }
-        
-        #top-bar .counter-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        iframe { 
+            width: 100%; 
+            height: 100%; 
+            border: none; 
         }
-        
-        #top-bar img {
-            display: block;
-            height: 22px; /* Adatta l'altezza dei numeri digitali alla barra */
-        }
-
-        /* Contenitore della mappa che prende tutto lo spazio rimasto */
-        #map-container {
-            width: 100%;
-            height: calc(100% - 40px);
-        }
-        
-        iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
-
-    <!-- Barra Superiore con il Contatore -->
-    <div id="top-bar">
-        <div>RETEMESH ROMA & LADISPOLI - LIVE MAP</div>
-        <div class="counter-container">
-            <span>VISITATORI:</span>
-            <img src="https://hitwebcounter.com" title="Counter" Alt="Visitatori Mesh" border="0" />
-        </div>
-    </div>
-
-    <!-- Contenitore della Mappa PotatoMesh -->
-    <div id="map-container">
-        <iframe src="https://loca.lt" allow="geolocation"></iframe>
-    </div>
-
+    <iframe src="https://loca.lt" allow="geolocation"></iframe>
 </body>
 </html>
