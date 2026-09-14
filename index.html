@@ -10,6 +10,16 @@
     </style>
 </head>
 <body>
-    <iframe src="https://providing-conceded-molar.ngrok-free.dev/" allow="geolocation"></iframe>
+
+    <iframe id="map-frame" src="https://providing-conceded-molar.ngrok-free.dev/" allow="geolocation"></iframe>
+
+    <script>
+        // Ricarica solo l'iframe della mappa ogni 30 secondi (30000 millisecondi)
+        setInterval(function() {
+            var iframe = document.getElementById('map-frame');
+            iframe.src = iframe.src;
+        }, 30000); 
+    </script>
+
 </body>
 </html>
