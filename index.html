@@ -2,14 +2,86 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://ngrok-free.dev">
-    <title>Mesh Roma IT - Mappa Live</title>
-    <script type="text/javascript">
-        // Forza il salto immediato cancellando la cache del frame
-        window.location.replace("https://ngrok-free.dev");
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeshRoma - Sezione Alto Lazio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 90%;
+        }
+        .logo-banner {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            color: #0b3c5d;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .btn-mappa {
+            display: inline-block;
+            background-color: #328cc1;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+        }
+        .btn-mappa:hover {
+            background-color: #0b3c5d;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-    <p>Reindirizzamento alla mappa live in corso... <a href="https://ngrok-free.dev">Clicca qui se non vieni reindirizzato</a>.</p>
+
+    <div class="container">
+        <!-- Logo ARI Alto Lazio in alto al centro -->
+        <img src="https://files.supersite.aruba.it/media/17090_041381993fc51c149bf48af0f2d76d1c3aa60d19.jpeg/v1/w_1745,h_0/17090_041381993fc51c149bf48af0f2d76d1c3aa60d19.webp" alt="ARI Sezione Alto Lazio" class="logo-banner">
+        
+        <h1>Rete Meshtastic Roma IT</h1>
+        <p>Benvenuti nel portale della rete mesh radio di Roma e dell'Alto Lazio. Tramite il link sottostante puoi accedere al monitoraggio in tempo reale dei nodi attivi e alla mappa di copertura della nostra community.</p>
+        
+        <!-- Pulsante di collegamento alla VPS Aruba -->
+        <a href="http://94.177.198.37:41447" class="btn-mappa" target="_blank">Mappa Live Meshtastic Roma IT</a>
+    </div>
+
+    <div class="footer">
+        © 2026 MeshRoma · Associazione Radioamatori Italiani · Sezione Alto Lazio IQØHL
+    </div>
+
 </body>
 </html>
