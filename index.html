@@ -25,16 +25,35 @@
             max-width: 800px;
             width: 90%;
         }
+        .logo-container {
+            width: 100%;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+        }
         .logo-banner {
             max-width: 100%;
             height: auto;
             border-radius: 6px;
-            margin-bottom: 25px;
+            /* Forza l'eliminazione visiva di icone segnaposto o bordi vuoti se l'immagine è in caricamento */
+            border: none;
+            outline: none;
         }
         h1 {
             color: #0b3c5d;
             font-size: 2.2rem;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        .tech-info {
+            background-color: #f0f4f8;
+            color: #244f6b;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 20px;
+            border-left: 4px solid #328cc1;
         }
         p {
             color: #555;
@@ -78,10 +97,18 @@
 <body>
 
     <div class="container">
-        <!-- Logo ARI Alto Lazio in alto al centro -->
-        <img src="https://aruba.it" alt="ARI Sezione Alto Lazio" class="logo-banner">
+        <!-- Contenitore ottimizzato per evitare icone fantasma sulla sinistra -->
+        <div class="logo-container">
+            <img src="https://aruba.it" class="logo-banner">
+        </div>
         
         <h1>Rete Meshtastic Roma IT</h1>
+        
+        <!-- Specifiche tecniche sotto il titolo -->
+        <div class="tech-info">
+            Preset MEDIUM_FAST (freq 869.525 - data-rate 3.52 kbps - bandwidth 250Khz)
+        </div>
+
         <p>Benvenuti nella rete meshtastic di Roma. Tramite il link sottostante puoi accedere al monitoraggio in tempo reale dei nodi attivi e alla mappa di copertura.</p>
         
         <!-- Pulsante di collegamento alla VPS Aruba -->
@@ -91,7 +118,7 @@
     <!-- Footer personalizzato con link esterno cliccabile -->
     <div class="footer">
         © 2026 · Associazione Radioamatori Italiani · Sezione Alto Lazio IQØHL <br>
-        <a href="http://arialtolazio.it" target="_blank">www.arialtolazio.it</a> · info@arialtolazio.it
+        <a href="http://arialtolazio.it" target="_blank">https://sezione.arialtolazio.it/meshtastic</a> · info@arialtolazio.it
     </div>
 
 </body>
