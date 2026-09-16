@@ -68,56 +68,35 @@
             padding: 15px 30px;
             font-size: 1.2rem;
             font-weight: bold;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
-            transition: all 0.3s ease;
+            border-radius: 6px;
+            transition: background 0.3s;
         }
         .btn-mappa:hover {
             background-color: #0b3c5d;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
         }
-        .footer {
-            margin-top: 40px;
+        /* Stile per il contatore di visite */
+        .counter-container {
+            margin-top: 35px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
             font-size: 0.9rem;
-            color: #888;
-            line-height: 1.5;
+            color: #777;
         }
-        .footer a {
-            color: #328cc1;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .footer a:hover {
-            text-decoration: underline;
+        .counter-container img {
+            vertical-align: middle;
+            margin-left: 5px;
         }
     </style>
 </head>
 <body>
 
+    <!-- Nota: Ricordati di inserire qui i tag di apertura/chiusura del container e gli elementi mancanti nel tuo frammento iniziale se non presenti nel file originale -->
     <div class="container">
-        <!-- L'immagine ora viene caricata direttamente in modo sicuro da GitHub -->
-        <div class="logo-container">
-            <img src="./logo.jpg" class="logo-banner" alt="ARI Sezione Alto Lazio">
+        <!-- Sezione Contatore Accessi -->
+        <div class="counter-container">
+            <span>Visite totali:</span>
+            <img src="https://seeyoufarm.com" alt="Contatore visite"/>
         </div>
-        
-        <h1>Rete Meshtastic Roma IT</h1>
-        
-        <!-- Specifiche tecniche sotto il titolo -->
-        <div class="tech-info">
-            Preset MEDIUM_FAST (freq 869.525 - data-rate 3.52 kbps - bandwidth 250Khz)
-        </div>
-
-        <p>Benvenuti nella rete meshtastic di Roma. Tramite il link sottostante puoi accedere al monitoraggio in tempo reale dei nodi attivi e alla mappa di copertura.</p>
-        
-        <!-- Pulsante di collegamento alla VPS Aruba -->
-        <a href="http://94.177.198.37:41447" class="btn-mappa" target="_blank">Mappa Live Meshtastic Roma IT</a>
-    </div>
-
-    <!-- Footer personalizzato con link esterno cliccabile -->
-    <div class="footer">
-        © 2026 · Associazione Radioamatori Italiani · Sezione Alto Lazio IQØHL <br>
-        <a href="http://arialtolazio.it" target="_blank">https://sezione.arialtolazio.it/meshtastic</a> · info@arialtolazio.it
     </div>
 
 </body>
