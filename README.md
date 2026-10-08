@@ -1,4 +1,4 @@
-## Hi there 👋
+## Real-time Meshtastic map of the mesh network in Rome and Central Italy
 
 <!--
 **meshroma/meshroma** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
