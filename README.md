@@ -1,6 +1,6 @@
 ## Real-time Meshtastic map of the mesh network in Rome and Central Italy
 Heltec V4 node + Raspberry PI4
-Link https://meshroma.arialtolazio.it/
+**Link https://meshroma.arialtolazio.it/
 
 <!--
 **meshroma/meshroma** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
